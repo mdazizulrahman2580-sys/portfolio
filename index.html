@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaisyUI Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Swiper CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+
+
+<body class="bg-white-100">
+
+  <header class="bg-blue-100 flex items-center justify-between  h-[70px] w-full px-6  md:px-8  py-3 ">
+    <div class="container mx-auto flex flex-col justify-between  h-[70px] w-full px-6  md:px-8  py-3 ">
+
+      <div class="flex-none">
+        <div class="font-bold text-lg text-blue-500">Laravel</div>
+        
+      </div>
+      <nav
+        class=" absolute left-1/2 transform -translate-x-1/2 flex gap-6 sm:text-base ml-[140px] hidden md:flex justify-between justify-center">
+
+        <a href="#Home" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#About" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#project" class="text-gray-700 hover:text-blue-600">project</a>
+        <a href="#servise" class="text-gray-700 hover:text-blue-600">servise</a>
+        <a href="#Contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+
+
+    </div>
+
+
+    <div class="flex gap-2">
+      <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Tailwind CSS Navbar component" src="azizul.png" />
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+
+      </div>
+
+  </header>
+
+
+  <!-- main -->
+  <main>
+
+    <section id="Home" class="bg-purple-100 w-full  flex items-center md:h-[500px] h-auto ">
+      <div class="container max-w-full flex flex-col md:flex-row items-center justify-between px-4">
+
+
+        <div class="w-full md:w-1/2 max-w-lg text-center " m>
+          <h1 class="text-4xl font-bold text-gray-800 leading-tight">
+            <span class="text-blue-500"> my portfolio website</span>
+          </h1>
+          <p class="mt-4 text-gray-600 mx-auto">
+            use to Laravel framework programming leanguage php
+          </p>
+
+        </div>
+
+
+        <div class="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center md:ml-[20px]">
+          <img src="showruv.png" alt="Hero Image" class="rounded-xl shadow-lg max-w-full md:max-w-lg h-auto">
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <div id="About" class="flex flex-col items-center justify-center mt-10">
+      <h1 class="text-6xl font-bold ">About Skills</h1>
+    </div>
+
+    <section class="mx-auto max-w-[1150px] rounded-xl mt-40 relative">
+
+      <span class="absolute top-0 left-0 w-full h-80 z-3 bg-blue-500 rounded-md mt-[-50px]"></span>
+
+      <div class="container mx-auto flex  flex-col items-center justify-between [80px]  relative z-10">
+
+        <h7 class="font-bold text-5xl ">Skills</h7>
+        <div
+          class="container mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-1 px-2 justify-center items-center ml-12">
+          <!--  Box 1 -->
+          <div class="flex bg-white h-[700px] w-[300px] rounded-xl items-center justify-center border border-gray-400 ">
+            <div class="flex flex-col  mt-[-px]">
+              <h1 class="font-bold text-xl mb-2 text-center">Back end Developer</h1>
+              <p class="text-black sm:text-base text-center font-bold">Ayan loved solving puzzles behind the screen.
+                He built servers, APIs, and databases that ran seamlessly.
+                Silent victories came with every bug fixed and system optimized.
+                The users never saw it, but his work kept the platform alive.</p>
+
+              <h1 class="text-red-500 text-center text-4xl font-bold mt-6">leanguage</h1>
+              <p class="text-black text-center sm:text-base font-bold mt-6"> node.js php java roby python</p>
+              <h1 class="text-red-500 text-4xl text-center font-bold ">My tools</h1>
+              <p class="text-center text-black font-bold mt-6 ">database mysql </p>
+              <p class="text-center text-black font-bold mt-6 "> Jammp mysql qoury </p>
+              <p class="text-center text-black font-bold mt-6 "> Node JS </p>
+              <p class="text-center text-black font-bold mt-6 "> PostgreSQL</p>
+              <p class="text-center text-black font-bold mt-6 "> stmplony</p>
+            </div>
+
+          </div>
+
+
+          <!-- Skills Box 2 -->
+          <div class="flex bg-white h-[700px] w-[300px] rounded-xl items-center justify-center border border-gray-400">
+            <div class="flex flex-col  mt-[-px]">
+              <h1 class="font-bold text-xl mb-2 text-center">Front-end Developer</h1>
+              <p class="text-black sm:text-base text-center font-bold">Maya crafted interfaces that everyone could see
+                and
+                enjoy.
+                She turned designs into smooth, interactive experiences.
+                Every animation, color, and button clicked just right because of her.
+                Her work made technology feel human and alive.
+              </p>
+
+              <h1 class="text-red-500 text-center text-4xl font-bold mt-6">Technologies Stack:</h1>
+              <p class="text-black text-center sm:text-base font-bold mt-6">HTML, JavaScript, Slim, CSS,Pug</p>
+              <h1 class="text-red-500 text-4xl text-center font-bold ">My tools</h1>
+              <p class="text-center text-black font-bold mt-6 ">responsive.css </p>
+              <p class="text-center text-black font-bold mt-6 "> boostraps </p>
+              <p class="text-center text-black font-bold mt-6 "> swiper </p>
+              <p class="text-center text-black font-bold mt-6 "> DaisyUI</p>
+              <p class="text-center text-black font-bold mt-6 "> gitup</p>
+            </div>
+
+          </div>
+          <!-- Skills Box 3 -->
+
+          <div class="flex bg-white h-[700px] w-[300px] rounded-xl items-center justify-center border border-gray-400">
+            <div class="flex flex-col  mt-[-px]">
+              <h1 class="font-bold text-xl mb-2 text-center">Designer</h1>
+              <p class="text-black sm:text-base text-center font-bold"> create both easy and simple,
+                and more complex and detailed prototypes.
+                Simplicity, convenience, usefulness and effectiveness at the same time.
+              </p>
+
+              <h1 class="text-red-500 text-center text-4xl font-bold mt-6">Things I Do:</h1>
+              <p class="text-black text-center sm:text-base font-bold mt-6">UX, UI, Web, Mobile, Apps, Logos</p>
+              <h1 class="text-red-500 text-4xl text-center font-bold ">My tools</h1>
+              <p class="text-center text-black font-bold mt-6 ">figma</p>
+              <p class="text-center text-black font-bold mt-6 ">stecks</p>
+              <p class="text-center text-black font-bold mt-6 "> Invision </p>
+              <p class="text-center text-black font-bold mt-6 "> origami</p>
+              <p class="text-center text-black font-bold mt-6 "> adove illestature</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <div id="project" class="flex flex-col text-center justify-center gap-6 mt-50">
+      <h1 class="font-bold text-6xl">Projects</h1>
+      <p>Have a look at some of the rolled-out projects I'm proud of:</p>
+    </div>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 px-4">
+
+      <!-- Skills Box 1 -->
+      <section
+        class="flex bg-green-500 h-[200px] md:h-[250px] lg:h-[300px] w-full rounded-xl items-center justify-center">
+        <div class="flex flex-col items-center p-4">
+          <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2">WowTaxi</h1>
+          <p class="text-white">UX design of the WowTaxi company's website, iOS and Android apps by creating easy-to-use
+            and plain user experience for the customers.</p>
+        </div>
+      </section>
+
+      <!-- Skills Box 2 -->
+      <section
+        class="flex bg-blue-500 h-[200px] md:h-[250px] lg:h-[300px] w-full rounded-xl items-center justify-center">
+        <div class="flex flex-col items-center p-4">
+          <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2">Block Expert</h1>
+          <p class="text-white">Server side authentication web application, primary double spend protecting (language:
+            nodeJS, database:
+            levelDB), development of MVP with consensus and distributed ledger (via p2p).</p>
+        </div>
+      </section>
+
+      <!-- Skills Box 3 -->
+      <section
+        class="flex bg-purple-500 h-[200px] md:h-[250px] lg:h-[300px] w-full rounded-xl items-center justify-center">
+        <div class="flex flex-col items-center p-4">
+          <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2">PayBox</h1>
+          <p class="text-white">
+            PayBox
+            Built a scalable, fault-tolerant architecture solution for a MESOS-based
+            web server. Processing design, development and implementation.</p>
+        </div>
+      </section>
+
+    </div>
+
+
+
+    <!-- Swiper Container -->
+    <div class="flex flex text-5xl text-center justify-center mt-10 font-bold">Slider System</div>
+    <div class="container mx-auto">
+      <div class="swiper  h-[200px] mt-10">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide  text-white flex items-center justify-center h-40 "><img src="2.jpeg" alt=""></div>
+          <div class="swiper-slide  text-white flex items-center justify-center h-40"><img src="3.jpeg" alt=""></div>
+          <div class="swiper-slide text-white flex items-center justify-center h-40"><img src="4.jpeg" alt=""></div>
+          <div class="swiper-slide  text-white flex items-center justify-center h-40"><img src="5.jpeg" alt=""></div>
+          <div class="swiper-slide text-white flex items-center justify-center h-40"><img src="6.jpeg" alt=""></div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 20, // slide gap
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        // Responsive Breakpoints
+        breakpoints: {
+          320: {   // Mobile
+            slidesPerView: 1,
+          },
+          640: {   // Tablet
+            slidesPerView: 2,
+          },
+          1024: {  // Desktop
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+
+    <section class="container mx-auto flex flex-col items-center justify-between mt-30 ">
+      <div>
+        <a class=" text-2xl text-center font-bold ml-55">Top Services</a>
+        <h1>As a licensed architect and designer, I can help you create your dream home or office.</h1>
+      </div>
+    </section>
+
+
+
+    <section id="servise" class="container mx-auto px-4 py-8">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Box 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="2.jpeg" alt="Image 1" class="w-full h-48 object-cover">
+        </div>
+
+        <!-- Box 2 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="3.jpeg" alt="Image 2" class="w-full h-48 object-cover">
+        </div>
+
+        <!-- Box 3 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="3.jpeg" alt="Image 3" class="w-full h-48 object-cover">
+        </div>
+
+        <!-- Box 4 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="4.jpeg" alt="Image 4" class="w-full h-48 object-cover">
+        </div>
+
+        <!-- Box 5 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="5.jpeg" alt="Image 5" class="w-full h-48 object-cover">
+        </div>
+
+        <!-- Box 6 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="6.jpeg" alt="Image 6" class="w-full h-48 object-cover">
+        </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+  <footer id="Contact"
+    class="bg-cyan-500 text-white w-full h-auto p-4 md:p-6 flex flex-col md:flex-row justify-between  gap-1 mt-40">
+    <!-- Contact Info -->
+    <div class="container mx-auto flex flex-col md:flex-row justify-between gap-1 p-4 md:p-6">
+
+
+      <div class="flex flex-col text-center md:text-left gap-1">
+        <p>Gmail: mdazizulrahman2580@gmail.com</p>
+        <p>Phone: +8801885827815</p>
+        <p>Address: mirpur,Dhaka, Bangladesh</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="flex flex-col md:flex-row gap-4 text-center md:text-right">
+        <a href="/about" class="hover:underline">About Us</a>
+        <a href="/contact" class="hover:underline">Contact</a>
+        <a href="/privacy" class="hover:underline">Privacy Policy</a>
+      </div>
+  </footer>
+
+  <footer class="bg-black text-white w-full p-3 flex justify-center gap-6 text-lg">
+    <a href="https://facebook.com" target="_blank" class="hover:text-cyan-400 transition-colors">Facebook</a>
+    <a href="https://twitter.com" target="_blank" class="hover:text-cyan-400 transition-colors">Twitter</a>
+    <a href="https://linkedin.com" target="_blank" class="hover:text-cyan-400 transition-colors">LinkedIn</a>
+  </footer>
+
+  </div>
+  <div class="navbar bg-base-100 shadow-sm">
+    <div class="flex-none">
+      <button class="btn btn-square btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          class="inline-block h-5 w-5 stroke-current">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">daisyUI</a>
+    </div>
+    <div class="flex-none">
+      <button class="btn btn-square btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          class="inline-block h-5 w-5 stroke-current">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</body>
+
+</html>
