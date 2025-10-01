@@ -12,245 +12,303 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <!-- Swiper CSS CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- Font Awesome CDN যোগ করতে হবে -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
+<body class="bg-white-100 ">
 
-<body class="bg-white-100">
 
-  <header class="bg-blue-100 flex items-center justify-between  h-[70px] w-full px-6  md:px-8  py-3 ">
-    <div class="container mx-auto flex flex-col justify-between  h-[70px] w-full px-6  md:px-8  py-3 ">
+  <!-- header part  -->
+   
 
-      <div class="flex-none">
-        <div class="font-bold text-lg text-blue-500">Laravel</div>
-        
+<header class="container mx-auto py-x-4 p-3 m-3">
+ 
+  <div class=" flex items-end justify-between  ">
+    
+   
+    <div class="navbar-start">
+      <div class="dropdown flex flex-col ">
+
+        <h1 class="text-4xl  text-blue-500">AW</h1>
+
       </div>
-      <nav
-        class=" absolute left-1/2 transform -translate-x-1/2 flex gap-6 sm:text-base ml-[140px] hidden md:flex justify-between justify-center">
 
-        <a href="#Home" class="text-gray-700 hover:text-blue-600">Home</a>
-        <a href="#About" class="text-gray-700 hover:text-blue-600">About</a>
-        <a href="#project" class="text-gray-700 hover:text-blue-600">project</a>
-        <a href="#servise" class="text-gray-700 hover:text-blue-600">servise</a>
-        <a href="#Contact" class="text-gray-700 hover:text-blue-600">Contact</a>
-      </nav>
+    </div>
 
+    <div class="navbar-center  text-md gap-4  sm:text-base  hidden md:flex ">
+      <a href="#About me" class="text-gray-600 hover:text-blue-500">About me</a>
+      <a href="Skills" class="text-gray-600 hover:text-blue-500">Skills</a>
+      <a href="#Projects" class="text-gray-600 hover:text-blue-500">Projects</a>
+      <a href="#Experience" class="text-gray-600 hover:text-blue-500">Experience</a>
+      <a href="#Events" class="text-gray-600 hover:text-blue-500">Events</a>
+
+
+      <a href="https://facebook.com" target="_blank" class="text-blue-600 hover:text-blue-800 text-3xl">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+        <i class="fa-brands fa-instagram"></i></a>
+
+      <a href="https://youtube.com" target="_blank" class="text-red-600 hover:text-red-800 text-3xl">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
 
     </div>
 
 
-    <div class="flex gap-2">
-      <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img alt="Tailwind CSS Navbar component" src="azizul.png" />
-          </div>
-        </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-          <li>
-            <a class="justify-between">
-              Profile
-              <span class="badge">New</span>
-            </a>
-          </li>
+    <div class="drawer drawer-end md:hidden flex  justify-end ">
+      <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-end">
+        <label for="my-drawer-4" class="drawer-button btn btn-sm justify-end ml-[220px] sm:ml-32 md:ml-10 lg:ml-0 ">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+        <div class="flex flex-col bg-base-200 text-base-content min-h-full w-80  text-right">
+          <ul class="menu">
 
+            <li><a href="#About me">About me</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Events">Events</a></li>
+
+
+          </ul>
+          <ul class="menu menu-horizontal">
+            <li>
+
+              <a href="https://facebook.com" target="_blank" class="text-blue-600 hover:text-blue-800 text-3xl">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li> <a href="https://youtube.com" target="_blank" class="text-red-600 hover:text-red-800 text-3xl">
+                <i class="fa-brands fa-youtube"></i>
+              </a></li>
+          </ul>
+        </div>
       </div>
 
-  </header>
+    </div>
+
+  
 
 
+</div>
+
+</header>
   <!-- main -->
   <main>
 
-    <section id="Home" class="bg-purple-100 w-full  flex items-center md:h-[500px] h-auto ">
-      <div class="container max-w-full flex flex-col md:flex-row items-center justify-between px-4">
 
 
-        <div class="w-full md:w-1/2 max-w-lg text-center " m>
-          <h1 class="text-4xl font-bold text-gray-800 leading-tight">
-            <span class="text-blue-500"> my portfolio website</span>
-          </h1>
-          <p class="mt-4 text-gray-600 mx-auto">
-            use to Laravel framework programming leanguage php
+
+    <div class="hero bg-base-200 min-h-[800px]">
+      <div class="hero-content flex-col lg:flex-row-reverse ">
+        <img src="aziz1111.png" class="max-w-sm rounded-lg w-full  grayscale-[100%]" />
+        <div>
+          <h1 class="text-5xl font-bold">Hello, I'm Azizul Rahman</h1>
+          <p class="py-6">
+            Licensed architect in Bangladesh
           </p>
-
-        </div>
-
-
-        <div class="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center md:ml-[20px]">
-          <img src="showruv.png" alt="Hero Image" class="rounded-xl shadow-lg max-w-full md:max-w-lg h-auto">
-        </div>
-
-      </div>
-    </section>
-
-
-
-    <div id="About" class="flex flex-col items-center justify-center mt-10">
-      <h1 class="text-6xl font-bold ">About Skills</h1>
-    </div>
-
-    <section class="mx-auto max-w-[1150px] rounded-xl mt-40 relative">
-
-      <span class="absolute top-0 left-0 w-full h-80 z-3 bg-blue-500 rounded-md mt-[-50px]"></span>
-
-      <div class="container mx-auto flex  flex-col items-center justify-between [80px]  relative z-10">
-
-        <h7 class="font-bold text-5xl ">Skills</h7>
-        <div
-          class="container mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-1 px-2 justify-center items-center ml-12">
-          <!--  Box 1 -->
-          <div class="flex bg-white h-[700px] w-[300px] rounded-xl items-center justify-center border border-gray-400 ">
-            <div class="flex flex-col  mt-[-px]">
-              <h1 class="font-bold text-xl mb-2 text-center">Back end Developer</h1>
-              <p class="text-black sm:text-base text-center font-bold">Ayan loved solving puzzles behind the screen.
-                He built servers, APIs, and databases that ran seamlessly.
-                Silent victories came with every bug fixed and system optimized.
-                The users never saw it, but his work kept the platform alive.</p>
-
-              <h1 class="text-red-500 text-center text-4xl font-bold mt-6">leanguage</h1>
-              <p class="text-black text-center sm:text-base font-bold mt-6"> node.js php java roby python</p>
-              <h1 class="text-red-500 text-4xl text-center font-bold ">My tools</h1>
-              <p class="text-center text-black font-bold mt-6 ">database mysql </p>
-              <p class="text-center text-black font-bold mt-6 "> Jammp mysql qoury </p>
-              <p class="text-center text-black font-bold mt-6 "> Node JS </p>
-              <p class="text-center text-black font-bold mt-6 "> PostgreSQL</p>
-              <p class="text-center text-black font-bold mt-6 "> stmplony</p>
-            </div>
-
-          </div>
-
-
-          <!-- Skills Box 2 -->
-          <div class="flex bg-white h-[700px] w-[300px] rounded-xl items-center justify-center border border-gray-400">
-            <div class="flex flex-col  mt-[-px]">
-              <h1 class="font-bold text-xl mb-2 text-center">Front-end Developer</h1>
-              <p class="text-black sm:text-base text-center font-bold">Maya crafted interfaces that everyone could see
-                and
-                enjoy.
-                She turned designs into smooth, interactive experiences.
-                Every animation, color, and button clicked just right because of her.
-                Her work made technology feel human and alive.
-              </p>
-
-              <h1 class="text-red-500 text-center text-4xl font-bold mt-6">Technologies Stack:</h1>
-              <p class="text-black text-center sm:text-base font-bold mt-6">HTML, JavaScript, Slim, CSS,Pug</p>
-              <h1 class="text-red-500 text-4xl text-center font-bold ">My tools</h1>
-              <p class="text-center text-black font-bold mt-6 ">responsive.css </p>
-              <p class="text-center text-black font-bold mt-6 "> boostraps </p>
-              <p class="text-center text-black font-bold mt-6 "> swiper </p>
-              <p class="text-center text-black font-bold mt-6 "> DaisyUI</p>
-              <p class="text-center text-black font-bold mt-6 "> gitup</p>
-            </div>
-
-          </div>
-          <!-- Skills Box 3 -->
-
-          <div class="flex bg-white h-[700px] w-[300px] rounded-xl items-center justify-center border border-gray-400">
-            <div class="flex flex-col  mt-[-px]">
-              <h1 class="font-bold text-xl mb-2 text-center">Designer</h1>
-              <p class="text-black sm:text-base text-center font-bold"> create both easy and simple,
-                and more complex and detailed prototypes.
-                Simplicity, convenience, usefulness and effectiveness at the same time.
-              </p>
-
-              <h1 class="text-red-500 text-center text-4xl font-bold mt-6">Things I Do:</h1>
-              <p class="text-black text-center sm:text-base font-bold mt-6">UX, UI, Web, Mobile, Apps, Logos</p>
-              <h1 class="text-red-500 text-4xl text-center font-bold ">My tools</h1>
-              <p class="text-center text-black font-bold mt-6 ">figma</p>
-              <p class="text-center text-black font-bold mt-6 ">stecks</p>
-              <p class="text-center text-black font-bold mt-6 "> Invision </p>
-              <p class="text-center text-black font-bold mt-6 "> origami</p>
-              <p class="text-center text-black font-bold mt-6 "> adove illestature</p>
-            </div>
-
-          </div>
-
+          <button class="btn btn-dash">Contect me</button>
         </div>
       </div>
-
-    </section>
-
-
-
-    <div id="project" class="flex flex-col text-center justify-center gap-6 mt-50">
-      <h1 class="font-bold text-6xl">Projects</h1>
-      <p>Have a look at some of the rolled-out projects I'm proud of:</p>
     </div>
 
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 px-4">
 
-      <!-- Skills Box 1 -->
-      <section
-        class="flex bg-green-500 h-[200px] md:h-[250px] lg:h-[300px] w-full rounded-xl items-center justify-center">
-        <div class="flex flex-col items-center p-4">
-          <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2">WowTaxi</h1>
-          <p class="text-white">UX design of the WowTaxi company's website, iOS and Android apps by creating easy-to-use
-            and plain user experience for the customers.</p>
-        </div>
-      </section>
+<!-- start azizul-->
 
-      <!-- Skills Box 2 -->
-      <section
-        class="flex bg-blue-500 h-[200px] md:h-[250px] lg:h-[300px] w-full rounded-xl items-center justify-center">
-        <div class="flex flex-col items-center p-4">
-          <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2">Block Expert</h1>
-          <p class="text-white">Server side authentication web application, primary double spend protecting (language:
-            nodeJS, database:
-            levelDB), development of MVP with consensus and distributed ledger (via p2p).</p>
-        </div>
-      </section>
 
-      <!-- Skills Box 3 -->
-      <section
-        class="flex bg-purple-500 h-[200px] md:h-[250px] lg:h-[300px] w-full rounded-xl items-center justify-center">
-        <div class="flex flex-col items-center p-4">
-          <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2">PayBox</h1>
-          <p class="text-white">
-            PayBox
-            Built a scalable, fault-tolerant architecture solution for a MESOS-based
-            web server. Processing design, development and implementation.</p>
+ <section class=" bg-white ">
+  <div class="container mx-auto py-x-4">
+  <div class="  flex-auto bg-gray-900  mt-20 min-h-[70vh] mx-auto">
+    <h2 class="text-4xl sm:text-5xl font-bold text-center text-white mb-4">Our Values</h2>
+    <span class="block w-16 h-1 bg-yellow-500 mx-auto mb-12"></span>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center  ">
+      
+      <!-- Box 1 -->
+      <div class="bg-gray-800 rounded-lg text-white border border-gray-700 shadow-md 
+                  hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out p-6 mx-auto max-w-sm">
+        <div class="text-yellow-500 text-4xl mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
         </div>
-      </section>
+        <h3 class="font-bold text-xl mb-2">Client commitment</h3>
+        <span class="block w-12 h-1 bg-yellow-500 mx-auto mb-4"></span>
+        <p class="text-gray-300 text-sm sm:text-base mt-0">
+          Our relentless dedication to clients stems from our integral belief that when you succeed, we succeed. You will see our commitment in the transparency of our communications and processes.
+        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="bg-gray-800 rounded-lg text-white border border-gray-700 shadow-md 
+                  hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out p-6 mx-auto max-w-sm">
+        <div class="text-yellow-500 text-4xl mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 class="font-bold text-xl mb-2">Process transparency</h3>
+        <span class="block w-12 h-1 bg-yellow-500 mx-auto mb-4"></span>
+        <p class="text-gray-300 text-sm sm:text-base mt-0">
+          Honest communication is the foundation of our partnerships. Transparent communication ensures there are no surprises and all stakeholders are on the same page.
+        </p>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="bg-gray-800 rounded-lg text-white border border-gray-700 shadow-md 
+                  hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out p-6 mx-auto max-w-sm">
+        <div class="text-yellow-500 text-4xl mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 class="font-bold text-xl mb-2">Talent retention</h3>
+        <span class="block w-12 h-1 bg-yellow-500 mx-auto mb-4"></span>
+        <p class="text-gray-300 text-sm sm:text-base mt-0">
+          Our talent is key to the success of our organization and our clients’ projects. We provide salary reviews, opportunities to grow, and encourage feedback.
+        </p>
+      </div>
 
     </div>
+  </div>
+  </div>
+</section>
 
+
+<!-- end  -->
+
+ <!-- Projects  -->
+  
+
+
+
+<!-- Project Boxes -->
+ <section class="bg-white">
+<div class="container py-x-4 mx-auto flex flex-wrap justify-center gap-6 mt-40  ">
+
+  <!-- Skills Box 1 -->
+<div id="Projects" class="container mx-auto flex flex-col text-center justify-center gap-6 top  px-4 ">
+  <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl">Projects</h1>
+  <p class="text-gray-700">Have a look at some of the rolled-out projects I'm proud of:</p>
+</div>
+
+
+
+
+  <section class="flex bg-green-500 h-[200px] mx-auto md:h-[250px] lg:h-[300px] 
+                  w-full sm:w-[48%] lg:w-[32%] rounded-xl items-center justify-center relative group overflow-hidden transition duration-300 hover:bg-green-600">
+
+    <div class="flex flex-col items-center p-4 text-center  transition duration-300- transform group-hover:scale-105">
+
+      <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2  group-hover:text-yellow-200">WowTaxi</h1>
+      <p class="text-white">
+        UX design of the WowTaxi company's website, iOS and Android apps by creating
+        easy-to-use and plain user experience for the customers.
+      </p>
+    </div>
+  </section>
+
+  <!--  Box 2 -->
+
+
+  <section class="flex bg-green-500 h-[200px] md:h-[250px] mx-auto lg:h-[300px] 
+                  w-full sm:w-[48%] lg:w-[32%] rounded-xl items-center justify-center relative group overflow-hidden transition duration-300 hover:bg-green-600">
+
+    <div class="flex flex-col items-center p-4 text-center  transition duration-300- transform group-hover:scale-105">
+
+      <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2  group-hover:text-yellow-200">Block Expert</h1>
+      <p class="text-white">
+           Server side authentication web application, double spend protection 
+        (nodeJS, levelDB), MVP with consensus and distributed ledger (via p2p).
+      </p>
+    </div>
+  </section>
+
+
+
+
+  <!--  Box 3 -->
+
+
+
+   <section class="flex bg-green-500 h-[200px] md:h-[250px] mx-auto lg:h-[300px] 
+                  w-full sm:w-[48%] lg:w-[32%] rounded-xl items-center justify-center relative group overflow-hidden transition duration-300 hover:bg-green-600">
+
+    <div class="flex flex-col items-center p-4 text-center  transition duration-300- transform group-hover:scale-105">
+
+      <h1 class="font-bold text-lg md:text-xl lg:text-2xl mb-2  group-hover:text-yellow-200">PayBox</h1>
+      <p class="text-white">
+           Built a scalable, fault-tolerant MESOS-based web server solution. 
+        Processing design, development, and implementation.
+      </p>
+    </div>
+  </section>
+
+
+</div>
+</section>
+
+
+
+<!-- end -->
 
 
     <!-- Swiper Container -->
-    <div class="flex flex text-5xl text-center justify-center mt-10 font-bold">Slider System</div>
-    <div class="container mx-auto">
+ <section class="bg-white">
+    <div class="container mx-auto py-x-4">
+
+       <div id="Skills" class="flex  text-5xl text-center justify-center  mt-20 font-bold">Skills</div>
       <div class="swiper  h-[200px] mt-10">
         <div class="swiper-wrapper">
+          
 
-          <div class="swiper-slide  text-white flex items-center justify-center h-40 "><img src="2.jpeg" alt=""></div>
-          <div class="swiper-slide  text-white flex items-center justify-center h-40"><img src="3.jpeg" alt=""></div>
-          <div class="swiper-slide text-white flex items-center justify-center h-40"><img src="4.jpeg" alt=""></div>
-          <div class="swiper-slide  text-white flex items-center justify-center h-40"><img src="5.jpeg" alt=""></div>
-          <div class="swiper-slide text-white flex items-center justify-center h-40"><img src="6.jpeg" alt=""></div>
+          <div class="swiper-slide  text-white flex items-center justify-center h-40 "><img src="laravel-12.png" alt="">
+          </div>
+          <div class="swiper-slide  text-white flex items-center justify-center h-40"><img src="laravel.jpeg" alt="">
+          </div>
+          <div class="swiper-slide text-white flex items-center justify-center h-40"><img src="mysql.png" alt="">
+          </div>
+          <div class="swiper-slide  text-white flex items-center justify-center h-40"><img src="5.jpeg" alt="">
+          </div>
+          <div class="swiper-slide text-white flex items-center justify-center h-40"><img src="4.jpeg" alt="">
+          </div>
         </div>
 
-        <!-- Pagination -->
+
         <div class="swiper-pagination"></div>
 
-        <!-- Navigation Buttons -->
+
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <!-- Scrollbar -->
+
         <div class="swiper-scrollbar"></div>
       </div>
-    </div>
-    <!-- Swiper JS CDN -->
+    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+
     <script>
       const swiper = new Swiper('.swiper', {
         loop: true,
-        spaceBetween: 20, // slide gap
+        spaceBetween: 20,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -262,74 +320,261 @@
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-        // Responsive Breakpoints
+        // Responsive 
         breakpoints: {
-          320: {   // Mobile
+          320: {
             slidesPerView: 1,
           },
-          640: {   // Tablet
+          640: {
             slidesPerView: 2,
           },
-          1024: {  // Desktop
+          1024: {
             slidesPerView: 3,
           },
         },
       });
     </script>
 
-    <section class="container mx-auto flex flex-col items-center justify-between mt-30 ">
-      <div>
-        <a class=" text-2xl text-center font-bold ml-55">Top Services</a>
-        <h1>As a licensed architect and designer, I can help you create your dream home or office.</h1>
+
+
+
+    </div>
+ </section>
+
+ <section class="bg-whait">
+<div class="container mx-auto flex flex-col items-center justify-center mt-40 py-x-4 text-center ">
+  <div class="max-w-3xl">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Top Services</h2>
+    <p class="text-base sm:text-lg">
+      As a licensed architect and designer, I can help you create your dream home or office.
+    </p>
+  </div>
+</div>
+</section>
+
+
+<section class="bg-white">
+<div id="portfolio" class="container py-x-4  mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+
+  
+  
+  <!-- Box Template -->
+  <div class="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-lg shadow-md">
+    <img src="4.jpeg" 
+         class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+      <div class="text-center space-y-4 px-4">
+        <h1 class="text-2xl sm:text-3xl text-blue-600 font-bold">My Portfolio Website</h1>
+        <p class="text-white text-lg font-bold">Designer</p>
+        <button class="btn btn-active py-2 px-4">Learn More</button>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <!-- Copy the Box Template for more items -->
+  <div class="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-lg shadow-md">
+    <img src="2.jpeg" 
+         class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+      <div class="text-center space-y-4 px-4">
+        <h1 class="text-2xl sm:text-3xl text-blue-600 font-bold">My Portfolio Website</h1>
+        <p class="text-white text-lg font-bold">Designer</p>
+        <button class="btn btn-active py-2 px-4">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repeat as many boxes as needed -->
+  <div class="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-lg shadow-md">
+    <img src="4.jpeg" 
+         class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+      <div class="text-center space-y-4 px-4">
+        <h1 class="text-2xl sm:text-3xl text-blue-600 font-bold">My Portfolio Website</h1>
+        <p class="text-white text-lg font-bold">Designer</p>
+        <button class="btn btn-active py-2 px-4">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-lg shadow-md">
+    <img src="4.jpeg" 
+         class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+      <div class="text-center space-y-4 px-4">
+        <h1 class="text-2xl sm:text-3xl text-blue-600 font-bold">My Portfolio Website</h1>
+        <p class="text-white text-lg font-bold">Designer</p>
+        <button class="btn btn-active py-2 px-4">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-lg shadow-md">
+    <img src="4.jpeg" 
+         class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+      <div class="text-center space-y-4 px-4">
+        <h1 class="text-2xl sm:text-3xl text-blue-600 font-bold">My Portfolio Website</h1>
+        <p class="text-white text-lg font-bold">Designer</p>
+        <button class="btn btn-active py-2 px-4">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-lg shadow-md">
+    <img src="4.jpeg" 
+         class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+      <div class="text-center space-y-4 px-4">
+        <h1 class="text-2xl sm:text-3xl text-blue-600 font-bold">My Portfolio Website</h1>
+        <p class="text-white text-lg font-bold">Designer</p>
+        <button class="btn btn-active py-2 px-4">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
 
 
 
-    <section id="servise" class="container mx-auto px-4 py-8">
+<!-- start -->
+    <section class=" flex flex-col bg-black w-full min-h-screen items-center justify-between">
+      <div class="container mx-auto  py-x-4 md:px-6 sm:px-8">
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Box 1 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="2.jpeg" alt="Image 1" class="w-full h-48 object-cover">
-        </div>
+<div class=" grid  sm:grid-cols-1 lg:grid-cols-2  md:grid-cols-2 gap-4  text-white ">
+<div class="join join-vertical bg-black/50 border-base-300 border">
+  <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" checked="checked" />
+    <div class="collapse-title font-semibold">What Is a Cinematic Video?</div>
+    <div class="collapse-content text-sm">A cinematic wedding video is how I shoot your video, edit it with a storyline,
+       add songs, and color grade it to make it look like a movie and stand out from regular wedding videos..</div>
+  </div>
+  <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="collapse-title font-semibold">What Equipment Do You Use?</div>
+    <div class="collapse-content text-sm">I use full HD cameras and edit on a professional computerized system. By using such lightweight equipment,
+       I can be as flexible as possible. I also use high-quality wireless microphones and audio recorders to guarantee you the best sound.</div>
+  </div>
+  <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="collapse-title font-semibold">What Wedding Packages Do You Offer?</div>
+    <div class="collapse-content text-sm">I have a few packages from $3600 to $5200. 
+      If you want something else to add to the package list, just let me know and we will talk about it. I will take into account all your ideas.</div>
+  </div>
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="collapse-title font-semibold">Do You Have any Discounts?</div>
+    <div class="collapse-content text-sm">I sometimes 
+      offer some extra free copies of your video or complementary coverage time for your special events.
+       Give me a call and we will discuss it..</div>
+  </div>
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="collapse-title font-semibold">What Do I Need to Order a Commercial Video?</div>
+    <div class="collapse-content text-sm">The main thing that you need is an understanding of 
+      what exactly you want to shoot, what idea to convey, and be ready to cooperate.</div>
+  </div>
 
-        <!-- Box 2 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="3.jpeg" alt="Image 2" class="w-full h-48 object-cover">
-        </div>
+   <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="collapse-title font-semibold">What If I Don't Want Something in the Package?</div>
+    <div class="collapse-content text-sm">TI am committed to making videos which meet all the clients' needs. Ask me about 
+      changing something in the package. I am open to your creative ideas. I do my best to make you 
+      a video that you will enjoy throughout your life</div>
+  </div>
+<!-- end -->
+<!-- start -->
+<div class="space-y-6 p-6">
+  <!-- Address -->
+  <div class="flex flex-col md:flex-row md:items-center gap-6">
+    <h1 class="text-3xl md:text-4xl font-bold w-36">Address:</h1>
+    <p class="py-2">
+      113 West 42nd St., Suite 1801, New York, NY 10018
+    </p>
+  </div>
 
-        <!-- Box 3 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="3.jpeg" alt="Image 3" class="w-full h-48 object-cover">
-        </div>
+  <!-- Hours -->
+  <div class="flex flex-col md:flex-row md:items-center gap-6">
+    <h1 class="text-3xl md:text-4xl font-bold w-36">Hours:</h1>
+    <p class="py-2">
+      Monday - Saturday: 11 AM - 9 PM <br />
+      Sunday: 11 AM - 7 PM
+    </p>
+  </div>
 
-        <!-- Box 4 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="4.jpeg" alt="Image 4" class="w-full h-48 object-cover">
-        </div>
+  <!-- Contacts -->
+  <div class="flex flex-col md:flex-row md:items-center gap-6">
+    <h1 class="text-3xl md:text-4xl font-bold w-36">Contacts:</h1>
+    <p class="py-2">
+      01885827815 <br />
+      mdazizulrahman2580@gmail.com
+    </p>
+  </div>
+</div>
 
-        <!-- Box 5 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="5.jpeg" alt="Image 5" class="w-full h-48 object-cover">
-        </div>
-
-        <!-- Box 6 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="6.jpeg" alt="Image 6" class="w-full h-48 object-cover">
-        </div>
-    </section>
-
-
+<!-- end -->
 
 
 
+</div> 
 
+<fieldset class="fieldset bg-[#101010] border-base-300 rounded-box  border gap-6 ">
+
+ <div class="flex flex-col gap-2 p-6">
+
+
+    <div class="text-white space-y-8">
+   <h1 class="text-4xl font-bold textarea-bordered gap-40">Contects</h1>
+    
+    <p class="font-bold ">Fill out the form below and describe your project if you want to hire me. I will contact you as soon as possible.</p>
+   </div>
+
+
+ <div class="space-y-4">
+  <input 
+    type="text" 
+    class="input input-lg input-bordered w-full text-black" 
+    placeholder="Enter your name*"/>
+
+  <input 
+    type="text" 
+    class="input input-lg input-bordered w-full text-black" 
+    placeholder="Enter your phone number" 
+  />
+
+  <input 
+    type="text " 
+    class="input input-lg input-bordered w-full text-black" 
+    placeholder="Enter your email" 
+  />
+
+  <textarea 
+    class="textarea textarea-lg textarea-bordered h-40 w-full text-black" 
+    placeholder="Type your message">
+  </textarea>
+</div>
+
+<button class=" btn btn bg-purple-100 text-center w-full text-lg mt-10">sends</button>
+</div>
+
+</fieldset>
+</div>
+
+</div>
+
+
+  </section>
 
   </main>
-  <footer id="Contact"
+
+  <!-- event Azizul-->
+
+  <footer id="Events"
     class="bg-cyan-500 text-white w-full h-auto p-4 md:p-6 flex flex-col md:flex-row justify-between  gap-1 mt-40">
-    <!-- Contact Info -->
+
+
+
     <div class="container mx-auto flex flex-col md:flex-row justify-between gap-1 p-4 md:p-6">
 
 
@@ -339,7 +584,7 @@
         <p>Address: mirpur,Dhaka, Bangladesh</p>
       </div>
 
-      <!-- Navigation Links -->
+
       <div class="flex flex-col md:flex-row gap-4 text-center md:text-right">
         <a href="/about" class="hover:underline">About Us</a>
         <a href="/contact" class="hover:underline">Contact</a>
@@ -354,29 +599,11 @@
   </footer>
 
   </div>
-  <div class="navbar bg-base-100 shadow-sm">
-    <div class="flex-none">
-      <button class="btn btn-square btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-          class="inline-block h-5 w-5 stroke-current">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-    </div>
-    <div class="flex-1">
-      <a class="btn btn-ghost text-xl">daisyUI</a>
-    </div>
-    <div class="flex-none">
-      <button class="btn btn-square btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-          class="inline-block h-5 w-5 stroke-current">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
-          </path>
-        </svg>
-      </button>
-    </div>
-  </div>
+
+
+
+
+
 
 </body>
 
